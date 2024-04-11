@@ -1,0 +1,102 @@
+#navbar {
+    border-right: 3px solid #ffc100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: url('https://www.pngall.com/wp-content/uploads/1/Road-High-Quality-PNG.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(2, 2, 0, 0.5);
+  }
+  
+  #navbar li {
+    list-style: none;
+    position: relative;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  html, body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  html {
+      display: block;
+      background-color: #f7f7f7;
+      color: #3a3a3a;
+  }
+  
+    @media screen and (min-width: 768px) {
+        main {
+            margin: 0 auto;
+            padding-left: 370px;
+        }
+    }
+  
+  main {
+    margin: 0 auto;
+    padding: 20px 40px 20px 400px;
+  }
+  
+  header {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .tire {
+    display: none;
+    width: 20px;
+    margin-left: auto;
+  }
+  
+  .nav-link:hover + .tire {
+    display: inline;
+  }
+  
+  .title {
+    color: #c1c1c1;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 400px); /* Ajusta a largura para compensar o espaço ocupado pelo navbar */
+    text-align: center;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total do footer */
+    z-index: 2; /* Define a ordem de empilhamento do elemento */
+  }
+  
+  .footer {
+    color: #222;
+    padding: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(245, 183, 0, 0.8);
+    border-radius: 4px;
+  }
+  
+  .footer:hover {
+    color: #ffc100;
+    background-color: #222;
+  }
