@@ -14,11 +14,39 @@
     background-color: #222;
     box-shadow: 0 0 10px rgba(2, 2, 0, 0.5);
   }
+
+  @media (max-width: 900px) {
+    main {
+      margin: 0 auto;
+      padding: 10px 10px 10px 200px !important;
+      text-align: center;
+    } 
+
+    #navbar {
+      width: 200px;
+    }
+    #navbar li {
+      margin-left: -10px;
+     }
+  }
+
+  @media (max-width: 412px) {
+    #navbar {
+      width: 150px;
+    }
+    #navbar li {
+     margin-left: -35px;
+    }
+    
+    .nav-link:hover + .tire {
+      display: none;
+    }
+  }
   
   #navbar li {
     list-style: none;
     position: relative;
-    width: 98%;
+    max-width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,16 +63,24 @@
       color: #3a3a3a;
   }
   
-    @media screen and (min-width: 768px) {
-        main {
-            margin: 0 auto;
-            padding-left: 370px;
-        }
-    }
-  
   main {
     margin: 0 auto;
     padding: 20px 40px 20px 400px;
+  }
+
+  @media (max-width: 412px) {
+    main {
+      margin: 0 auto;
+      padding: 10px 10px 10px 160px !important;
+      text-align: center;
+    }
+    .lista{
+      margin-left: -20px;
+      margin-right: 10px;
+    }
+    .lista li {
+      font-weight: 700;
+    }
   }
   
   header {
@@ -52,7 +88,7 @@
     font-size: 20px;
     text-align: center;
   }
-  
+
   .nav-link {
     text-decoration: none;
     color: #666;
@@ -62,7 +98,7 @@
     margin-bottom: 10px;
     position: relative;
   }
-  
+ 
   .tire {
     display: none;
     width: 20px;
@@ -100,3 +136,14 @@
     color: #ffc100;
     background-color: #222;
   }
+
+  @media (max-width: 900px) {
+.footer{
+  margin-left: 120px;
+}
+  }
+  @media (max-width: 412px) {
+    .footer{
+      margin-left: 40px;
+    }
+      }
